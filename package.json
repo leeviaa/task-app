@@ -10,7 +10,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.19.2",
     "mongodb": "^3.6.0",
-    "nodemon": "^2.0.4"
+    "mongoose": "^5.9.27",
+    "nodemon": "^2.0.4",
+    "validator": "^13.1.1"
   }
 }

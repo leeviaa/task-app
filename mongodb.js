@@ -17,33 +17,6 @@ MongoClient.connect(connectionURL, {useNewUrlParser: true
    return console.log('Unable to connect to database');
   }
   const db = client.db(databaseName)
-    //  db.collection('users').updateOne({
-    //    _id: new ObjectID('5f26faa5accff506448883b0')
-    //   }, {
-    //    $inc: {
-    //      age: 3
-    //    }
-    //   })
-    //   .then( result => {
-    //     console.log(result);
-    //   }) 
-    //   .catch(err => {
-    //     console.log('Could not update field');
-    //   })
-    // db.collection('tasks').updateMany({ completed: false},
-    //   {
-    //     $set: {
-    //       completed: true
-    //     }
-    //   }).then( result => {
-    //     console.log(result.matchedCount);
-    //   }). catch( err => {
-    //     console.log(err);
-    //   })
-    db.collection('tasks').deleteOne({task: 'Walk luna'})
-                          .then(result => {
-                    console.log(result.deletedCount)}).catch(err => {
-                      console.log(err);
-                    })
+      
 })
 
